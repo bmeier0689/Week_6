@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div class="nav">
+        <div class="nav-bar">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="containers">
+        <!-- User Card -->
+        <div id="user-edu">
+            <!-- main -->
+            <div class="flex-container">
+    
+                <!-- user info card -->
+                <div class="user-card">
+                    <div class="card-header">
+                        <img class="avatar" src="headshot.jpg" alt="headshot">
+                    </div>
+                    <div class="card-body">
+                        <h1 id="userName">Brad Meier</h1>
+                        <h3><img src="icons/map-marker.png" alt="pin" class="icon"> Iwakuni, Japan</h3>
+                        <p>English Teacher | Photographer | Developer<br>
+                        Living in Japan, teaching English to kids, and on the road to becoming a Software Developer!</p>
+                        <p><a href="#" onclick="changeText(Element)"><img src="icons/gear.png" alt="gear" class="icon"> edit profile</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Education Section -->
+    
+            <div class="education">
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <h1>Education</h1>
+                    </div>
+                    <div class="education-body">
+                        <h2>Coding Dojo - Part-Time Flex Bootcamp</h2>
+                        <h3>April 2022 - October 2022</h3>
+                        <p class="education-p">Python Full Stack & Web Fundamentals</p>
+                        <h2>Temple University, Japan Campus</h2>
+                        <h3>May 2017 - Dec 2020</h3>
+                        <p class="education-p">Bachelor of Arts: Asian Studies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="connections">
+            <!-- Connection Requests -->
+        
+            <div class="connection-r">
+
+                <div class="requests-card">
+                    <div class="requests-header">
+                        <span class="counter requests">2</span>
+                        <h1>Connection Requests</h1>
+                    </div>
+                    <div class="requests-body">
+                        <p class="connection-p anne"><img class="avatar-s" src="images/anne-s.jpg" alt="anne-s">Anne S<button class="add-btn" onclick="addUser1(Element)"><img class="icon-m1" src="icons/accept-circle.png" alt="accept-circle"></button><button class="sub-btn" onclick="removeUser1(Element)"><img class="icon-m2" src="icons/close-circle.png" alt="close-circle"></button></p>
+                        <p class="connection-p jane"><img class="avatar-s" src="images/jane-m.jpg" alt="jane-m">Jane M<button class="add-btn" onclick="addUser2(Element)"><img class="icon-m1" src="icons/accept-circle.png" alt="accept-circle"></button><button class="sub-btn" onclick="removeUser2(Element)"><img class="icon-m2" src="icons/close-circle.png" alt="close-circle"></button></p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Your Connections -->
+        
+            <div class="connection-y">
+
+                <div class="connections-card">
+                    <div class="connections-header">
+                        <span class="counter connections">500</span>
+                            <h1>Your Connections</h1>
+                    </div>
+                    <div class="connections-body">
+                        <p class="connection-p"><img class="avatar-s" src="images/adrien-s.jpg" alt="adrien-s"> Adrien S</p>
+                        <p class="connection-p"><img class="avatar-s" src="images/alayne-s.jpg" alt="alayne-d"> Alayne D</p>
+                        <p class="connection-p"><img class="avatar-s" src="images/todd-s.jpg" alt="todd-r"> Todd R</p>
+                        <p class="connection-p"><img class="avatar-s" src="images/phil-s.jpg" alt="phil-t"> Phil T</p>
+                        <p class="connection-p"><img class="avatar-s" src="images/arry-s.jpg" alt="arry-d"> Arry D</p>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
