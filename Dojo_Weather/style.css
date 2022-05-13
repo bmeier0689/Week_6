@@ -32,8 +32,6 @@ a{
 #nav-bar a{
     text-decoration: none;
     color: whitesmoke;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 /* Current City */
@@ -49,7 +47,6 @@ a{
 
 #current span{
     font-size: 1.3rem;
-    font-weight: 600;
 }
 
 /* Days */
@@ -74,11 +71,6 @@ a{
     margin: 30px 0px;
 }
 
-.day p{
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
 .temp{
     display: flex;
     width: 160px;
@@ -88,14 +80,10 @@ a{
 
 .high{
     color: firebrick;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 .low{
     color: #005db6;
-    font-size: 1.5rem;
-    font-weight: 600;
 }
 
 /* Cookie Bar */
@@ -133,6 +121,19 @@ a{
     color: white;
     box-shadow: 4px 4px black;
     border-radius: 5px;
-    font-size: 1.2rem;
     cursor: pointer;
+}
+
+/* Misc */
+
+#nav-bar a, .temp{
+    font-size: 1.5rem;
+}
+
+.day p, .btn{
+    font-size: 1.2rem;
+}
+
+.day p, .temp, #current span, #nav-bar a{
+    font-weight: 600;
 }
