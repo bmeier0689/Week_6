@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dojo Weather</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
 
         <!-- Nav Bar -->
 
-        <div class="nav-bar">
+        <div id="nav-bar">
             <h1>DojoWeather</h1>
-            <a href="#">Tokyo</a>
-            <a href="#">Osaka</a>
-            <a href="#">Hokkaido</a>
+            <a href="#" onclick="alert('Loading weather report...')">Tokyo</a>
+            <a href="#" onclick="alert('Loading weather report...')">Osaka</a>
+            <a href="#" onclick="alert('Loading weather report...')">Hokkaido</a>
         </div>
 
         <!-- Current City -->
 
-        <div class="current">
+        <div id="current">
             <h1>Iwakuni</h1>
             <span>show temperature in
                 <select name="temp" id="temp">
@@ -34,7 +34,7 @@
 
         <!-- Days -->
 
-        <div class="days">
+        <div id="days">
             <div class="day">
                 <h2>Today</h2>
                 <img src="assets/some_rain.png" alt="some_rain">
@@ -75,13 +75,13 @@
 
         <!-- Cookie Bar -->
 
-        <div class="pop-up">
+        <div id="cookies">
             <img src="assets/cookie.png" alt="cookie">
             <div>
                 <h3>Stop! Cookie time</h3>
                 <div class="info">
                     <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
-                    <button class="btn">I Accept</button>
+                    <button class="btn" onclick="hide(this)">I Accept</button>
                 </div>
             </div>
         </div>

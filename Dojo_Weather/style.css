@@ -7,7 +7,7 @@ a{
     color: darkblue;
 }
 
-.container{
+#container{
     width: 1000px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,21 +15,21 @@ a{
 
 /* Nav Bar */
 
-.nav-bar{
+#nav-bar{
     background-color: #3db0f7;
     color: whitesmoke;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-.nav-bar h1{
+#nav-bar h1{
     font-size: 2.5rem;
     margin-right: 60px;
 }
 
-.nav-bar a{
+#nav-bar a{
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.5rem;
@@ -38,7 +38,7 @@ a{
 
 /* Current City */
 
-.current{
+#current{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,9 +47,14 @@ a{
     padding: 10px 0px;
 }
 
+#current span{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 /* Days */
 
-.days{
+#days{
     display: flex;
     justify-content: space-between;
 }
@@ -95,18 +100,21 @@ a{
 
 /* Cookie Bar */
 
-.pop-up{
+#cookies{
     border: 3px solid black;
     display: flex;
     margin-top: 5px;
+    width: 997px;
+    position: fixed;
+    bottom: auto;
 }
 
-.pop-up h3{
+#cookies h3{
     padding-top: 15px;
 }
 
-.pop-up img{
-    margin: 20px;
+#cookies img{
+    margin: 23px;
 }
 
 .info{
